@@ -2,9 +2,7 @@
   import { page } from '$app/stores';
   import '../app.css';
 
-  function isPage(path) {
-    return path === $page.url.pathname;
-  }
+  $: current = $page.url.pathname;
 </script>
 
 <div class="container">
@@ -14,10 +12,10 @@
       <h1>Nominating Committee</h1>
     </div>
     <nav>
-      <a href="/" class:current={isPage('/')}>Home</a>
-      <a href="/vision" class:current={isPage('/vision')}>Vision</a>
-      <a href="/positions" class:current={isPage('/positions')}>Positions</a>
-      <a href="/survey" class:current={isPage('/survey')}>Survey</a>
+      <a href="/" class:current={current === '/'}>Home</a>
+      <a href="/vision" class:current={current === '/vision'}>Vision</a>
+      <a href="/positions" class:current={current === '/positions'}>Positions</a>
+      <a href="/survey" class:current={/survey/.test(current)}>Survey</a>
     </nav>
   </header>
 
