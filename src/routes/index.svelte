@@ -26,6 +26,7 @@
 
 
 <p>
-  Thank you,<br/>
-  Wellspring Nominating Committee
+  Thank you,<br/><br/>
+  Wellspring Nominating Committee<br>
+  Felicia Bullock, Grace Chan, James Cuénod, Philip Han, Young Ok Kim, Ken Kunz
 </p>
