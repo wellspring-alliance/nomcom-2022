@@ -1,4 +1,5 @@
 <script>
+  import { goto } from '$app/navigation';
   import participantInfo from '$lib/participantInfo';
 
   const codaURL = import.meta.env.VITE_CODA_RESOURCE_URL;
@@ -8,11 +9,17 @@
   let selectedRoles = [];
   let reason = '';
 
+  let submitting = false;
+  let error = null;
+
   const roles = [
     'Elder', 'Member at Large', 'Treasurer', 'Financial Secretary', 'Deacon', 'Not sure / Any'
   ];
 
   async function handleSubmit() {
+    submitting = true;
+    error = null;
+
     const cells = [
         { "column": "c-y_qumJ4J1z", "value": "web" },
         { "column": "c-UZJv_f3hoh", "value": name },
@@ -24,16 +31,21 @@
 
     const payload = { rows: [ { cells: cells } ] };
 
-    const response = await fetch(codaURL, {
-      method: 'post',
-      body:    JSON.stringify(payload),
-      headers: {
-          'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + codaApiKey
-      },
-    });
-    const json = await response.json();
-    console.log(json);
+    try {
+      const response = await fetch(codaURL, {
+        method: 'post',
+        body:    JSON.stringify(payload),
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + codaApiKey
+        },
+      });
+      const json = await response.json();
+      goto('/survey/success');
+    } catch(e) {
+      error = e;
+      submitting = false;
+    }
   }
 </script>
 
@@ -78,10 +90,19 @@
 
   <p>
     <a class="btn" href="/survey">Back</a>
-    <button type="submit" class="btn btn-primary">
+    <button type="submit" class="btn btn-primary" disabled={submitting}>
       Submit
     </button>
   </p>
+
+  {#if error}
+    <div class="error">
+      Oops! An error occurred. You can try submitting again. If the error persists, please email
+      <a href="mailto:nomcom@wellspringalliance.net">nomcom@wellspringalliance.net</a> to
+      let us know.
+      <pre>{error.message}</pre>
+    </div>
+  {/if}
 </form>
 
 <style>
@@ -100,5 +121,11 @@
     width: 200px;
     padding: 0.1ex 0;
     white-space: nowrap;
+  }
+
+  .error {
+    padding: 1rem;
+    border: 1px solid red;
+    background-color: pink;
   }
 </style>
