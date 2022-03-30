@@ -1,5 +1,4 @@
 <script>
-  import { base } from '$app/paths';
   import { page } from '$app/stores';
   import '../app.css';
 
@@ -11,14 +10,14 @@
 <div class="container">
   <header>
     <div>
-      <a href="{base}/"><img src="/wellspring-logo.png" alt="Wellspring Logo"></a>
+      <a href="/"><img src="/wellspring-logo.png" alt="Wellspring Logo"></a>
       <h1>Nominating Committee</h1>
     </div>
     <nav>
-      <a href="{base}/" class:current={isPage('/')}>Home</a>
-      <a href="{base}/vision" class:current={isPage('/vision')}>Vision</a>
-      <a href="{base}/positions" class:current={isPage('/positions')}>Positions</a>
-      <a href="{base}/survey" class:current={isPage('/survey')}>Survey</a>
+      <a href="/" class:current={isPage('/')}>Home</a>
+      <a href="/vision" class:current={isPage('/vision')}>Vision</a>
+      <a href="/positions" class:current={isPage('/positions')}>Positions</a>
+      <a href="/survey" class:current={isPage('/survey')}>Survey</a>
     </nav>
   </header>
 
