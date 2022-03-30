@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 
-const dev = process.env.NODE_ENV === 'development';
+const path = process.env.NODE_ENV === 'development' ? '' : '/nomcom-2022';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,7 +11,8 @@ const config = {
 		}
 	},
 	paths: {
-		base: dev ? '' : '/nomcom-2022'
+		base: path,
+		assets: path
 	}
 };
 
