@@ -11,7 +11,7 @@
   <header>
     <div>
       <a href="/"><img src="/wellspring-logo.png" alt="Wellspring Logo"></a>
-      <h1>Nominating Committee 2022</h1>
+      <h1>Nominating Committee</h1>
     </div>
     <nav>
       <a href="/" class:current={isPage('/')}>Home</a>
@@ -53,7 +53,7 @@
   header h1 {
     font-weight: 300;
     font-size: 2rem;
-    margin: 1rem 2rem;
+    margin: 0.5em 1em;
   }
 
   nav {
@@ -81,5 +81,40 @@
 
   main {
     padding: 1rem 2rem;
+  }
+
+  @media (max-width: 1000px) {
+    .container {
+      margin: 0 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 0 1rem;
+    }
+
+    header img {
+      width: 180px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .container {
+      margin: 0;
+    }
+
+    header img {
+      width: 120px;
+      margin-left: 1em;
+    }
+
+    header h1 {
+      font-size: 1rem;
+    }
   }
 </style>
