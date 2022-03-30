@@ -44,6 +44,6 @@
 
   <p>
     <a class="btn" href="/">Back</a>
-    <button type="submit" class="btn btn-primary">Continue to Candidate Info</button>
+    <button type="submit" class="btn btn-primary">Continue</button>
   </p>
 </form>
