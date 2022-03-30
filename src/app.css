@@ -1,6 +1,7 @@
 :root {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.2;
   --wellspring-green: #00a668;
 }
 
@@ -11,4 +12,55 @@ body {
 
 h1, h2, h3 {
   font-weight: 300;
+}
+
+input, textarea, button {
+  font: inherit;
+}
+
+input[type=text], input[type=email], textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+input[type=text], input[type=email] {
+  max-width: 350px;
+}
+
+.label-block {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  font-size: 11pt;
+  margin-top: 2em;
+  margin-bottom: 1ex;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.5em 2em;
+  background: #ccc;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--wellspring-green);
+  color: white;
+  letter-spacing: 1px;
+  filter: brightness(0.9);
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn-primary:hover {
+  filter: none;
 }

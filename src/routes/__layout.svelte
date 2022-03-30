@@ -29,7 +29,8 @@
 
 <style>
   .container {
-    max-width: 960px;
+    box-sizing: border-box;
+    max-width: 768px;
     margin: 0 auto;
     background-color: white;
     min-height: 100vh;
@@ -82,23 +83,17 @@
     padding: 1rem 2rem;
   }
 
-  @media (max-width: 1000px) {
-    .container {
-      margin: 0 2rem;
-    }
-  }
-
   @media (max-width: 768px) {
     .container {
       margin: 0 1rem;
     }
 
     header img {
-      width: 180px;
+      width: 200px;
     }
 
     header h1 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
   }
 
@@ -108,12 +103,23 @@
     }
 
     header img {
-      width: 120px;
+      width: 180px;
       margin-left: 1em;
     }
 
     header h1 {
-      font-size: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    header img {
+      width: 120px;
+    }
+
+    header h1 {
+      font-size: 1.2rem;
+      margin: 0.25em 0.5em;
     }
   }
 </style>

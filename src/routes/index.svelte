@@ -15,7 +15,7 @@
 </p>
 
 <p>
-  <a class="survey-button" href="/survey">Begin Survey</a>
+  <a class="btn btn-primary" href="/survey">Begin Survey</a>
 </p>
 
 <p>
@@ -29,20 +29,3 @@
   Thank you,<br/>
   Wellspring Nominating Committee
 </p>
-
-<style>
-  .survey-button {
-    display: inline-block;
-    margin: 0.5rem 0;
-    padding: 0.5em 2em;
-    background-color: var(--wellspring-green);
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    filter: brightness(0.9);
-  }
-
-  .survey-button:hover {
-    filter: none;
-  }
-</style>

@@ -1,0 +1,83 @@
+<script>
+  import participantInfo from '$lib/participantInfo';
+
+  let name = '';
+  let selectedRoles = [];
+  let reason = '';
+
+  $: console.log(selectedRoles);
+
+  const roles = [
+    'Elder', 'Member at Large', 'Treasurer', 'Financial Secretary', 'Deacon', 'Not sure / Any'
+  ];
+
+  function handleSubmit() {
+    // submit the form!
+  }
+</script>
+
+<h1>2022 Leaders Survey</h1>
+
+<h2>Candidate Info</h2>
+
+<p>
+  Now tell us who you are recommending and why. You will be able to submit
+  additional recommendations on the next page.
+</p>
+
+<form on:submit|preventDefault={handleSubmit}>
+  <label class="label-block" for="name">
+    Name
+  </label>
+  <input
+    bind:value={name}
+    id="name"
+    type="text"
+    autocomplete="off"
+    required
+  />
+
+  <div class="label-block">
+    What positions do you recommend this candidate for?
+    <a on:click|preventDefault href="#modal">view descriptions</a>
+  </div>
+  <div class="checkbox-group">
+    {#each roles as role}
+      <label>
+        <input bind:group={selectedRoles} type="checkbox" value={role}>
+        {role}
+      </label>
+    {/each}
+  </div>
+
+  <label class="label-block" for="reason">
+    Why do you recommend this candidate?
+  </label>
+  <textarea bind:value={reason} rows="8" id="reason" autocomplete="off" required />
+
+  <p>
+    <a class="btn" href="/survey">Back</a>
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  </p>
+</form>
+
+<style>
+  .label-block a {
+    font-weight: normal;
+    display: inline-block;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  .checkbox-group label {
+    width: 200px;
+    padding: 0.1ex 0;
+    white-space: nowrap;
+  }
+</style>
