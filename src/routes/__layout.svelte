@@ -51,7 +51,6 @@
   }
 
   header h1 {
-    font-weight: 300;
     font-size: 2rem;
     margin: 0.5em 1em;
   }
@@ -70,11 +69,11 @@
   }
 
   nav a:hover {
-    color: #00a668;
+    color: var(--wellspring-green);
   }
-
+  
   nav a.current {
-    color: #00a668;
+    color: var(--wellspring-green);
     font-weight: bold;
     cursor: default;
   }
