@@ -1,18 +1,39 @@
 <script>
   import participantInfo from '$lib/participantInfo';
 
+  const codaURL = import.meta.env.VITE_CODA_RESOURCE_URL;
+  const codaApiKey = import.meta.env.VITE_CODA_API_TOKEN;
+
   let name = '';
   let selectedRoles = [];
   let reason = '';
-
-  $: console.log(selectedRoles);
 
   const roles = [
     'Elder', 'Member at Large', 'Treasurer', 'Financial Secretary', 'Deacon', 'Not sure / Any'
   ];
 
-  function handleSubmit() {
-    // submit the form!
+  async function handleSubmit() {
+    const cells = [
+        { "column": "c-y_qumJ4J1z", "value": "web" },
+        { "column": "c-UZJv_f3hoh", "value": name },
+        { "column": "c-6MP3FwbzvB", "value": selectedRoles.join(', ') },
+        { "column": "c-0eTQB6DTlb", "value": reason },
+        { "column": "c-SHqzNdYZXV", "value": $participantInfo.name },
+        { "column": "c-p8iRn2wHCj", "value": $participantInfo.email }
+    ];
+
+    const payload = { rows: [ { cells: cells } ] };
+
+    const response = await fetch(codaURL, {
+      method: 'post',
+      body:    JSON.stringify(payload),
+      headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + codaApiKey
+      },
+    });
+    const json = await response.json();
+    console.log(json);
   }
 </script>
 
