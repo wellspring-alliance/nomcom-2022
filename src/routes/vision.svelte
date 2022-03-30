@@ -1,3 +1,3 @@
 <h1>Vision</h1>
 
-<p>Content TBD</p>
+<p>Check back soon for more info about the 2022 Nominating Committee's vision.</p>

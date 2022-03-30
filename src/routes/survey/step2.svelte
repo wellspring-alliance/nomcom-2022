@@ -72,7 +72,7 @@
 
   <div class="label-block">
     What positions do you recommend this candidate for?
-    <a on:click|preventDefault href="#modal">view descriptions</a>
+    <a href="/positions" target="_blank">view descriptions</a>
   </div>
   <div class="checkbox-group">
     {#each roles as role}
