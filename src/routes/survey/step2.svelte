@@ -26,7 +26,8 @@
         { "column": "c-6MP3FwbzvB", "value": selectedRoles.join(', ') },
         { "column": "c-0eTQB6DTlb", "value": reason },
         { "column": "c-SHqzNdYZXV", "value": $participantInfo.name },
-        { "column": "c-p8iRn2wHCj", "value": $participantInfo.email }
+        { "column": "c-p8iRn2wHCj", "value": $participantInfo.email },
+        { "column": "c-lq39_DMZM0", "value": $participantInfo.contact }
     ];
 
     const payload = { rows: [ { cells: cells } ] };

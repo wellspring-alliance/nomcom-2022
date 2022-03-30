@@ -1,14 +1,5 @@
 <script>
   import participantInfo from '$lib/participantInfo';
-  import { goto } from '$app/navigation';
-
-  let name = $participantInfo.name;
-  let email = $participantInfo.email;
-
-  function handleSubmit() {
-    participantInfo.set({ name, email });
-    goto('/survey/step2');
-  }
 </script>
 
 <h1>2022 Leaders Survey</h1>
@@ -19,31 +10,46 @@
   Please share your information so we know who this nomination is from.
 </p>
 
-<form on:submit|preventDefault={handleSubmit}>
-  <label class="label-block" for="name">
-    Your Name
-  </label>
-  <input
-    bind:value={name}
-    id="name"
-    type="text"
-    autocomplete="name"
-    required
-  />
+<label class="label-block" for="name">
+  Your Name
+</label>
+<input
+  bind:value={$participantInfo.name}
+  id="name"
+  type="text"
+  autocomplete="name"
+  required
+/>
 
-  <label class="label-block" for="email">
-    Your Email
-  </label>
-  <input
-    bind:value={email}
-    id="email"
-    type="email"
-    autocomplete="email"
-    required
-  />
+<label class="label-block" for="email">
+  Your Email
+</label>
+<input
+  bind:value={$participantInfo.email}
+  id="email"
+  type="email"
+  autocomplete="email"
+  required
+/>
 
-  <p>
-    <a class="btn" href="/">Back</a>
-    <button type="submit" class="btn btn-primary">Continue</button>
-  </p>
-</form>
+<div class="contact">
+  Are you open to being contacted by the Nominating Committee about your recommendations?
+  <label>
+    <input bind:checked={$participantInfo.contact} type="checkbox" /> Yes
+  </label>
+</div>
+
+<p>
+  <a class="btn" href="/">Back</a>
+  <a class="btn btn-primary" href="/survey/step2">Continue</a>
+</p>
+
+<style>
+  .contact {
+    margin-top: 2em;
+  }
+
+  .contact label {
+    display: block;
+  }
+</style>
