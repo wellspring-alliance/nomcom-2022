@@ -1,8 +1,17 @@
 <script>
   import participantInfo from '$lib/participantInfo';
+
+  const endDate = new Date('2022-04-10');
+  const isEnded = new Date() > endDate;
 </script>
 
 <h1>2022 Leaders Survey</h1>
+
+{#if isEnded}
+  <div class="ended">
+    The survey ended on April 10, 2022.
+  </div>
+{/if}
 
 <h2>Participant Info</h2>
 
@@ -19,6 +28,7 @@
   type="text"
   autocomplete="name"
   required
+  disabled={isEnded}
 />
 
 <label class="label-block" for="email">
@@ -30,6 +40,7 @@
   type="email"
   autocomplete="email"
   required
+  disabled={isEnded}
 />
 
 <div class="contact">
@@ -41,15 +52,28 @@
 
 <p>
   <a class="btn" href="/">Back</a>
-  <a class="btn btn-primary" href="/survey/step2">Continue</a>
+  <a
+    class="btn btn-primary"
+    disabled={isEnded}
+    on:click={(e) => { isEnded && e.preventDefault()}}
+    href="/survey/step2">Continue
+  </a>
 </p>
 
 <style>
+  .ended {
+    font-weight: bold;
+  }
+
   .contact {
     margin-top: 2em;
   }
 
   .contact label {
     display: block;
+  }
+
+  a[disabled] {
+    cursor: not-allowed;
   }
 </style>
