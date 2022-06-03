@@ -76,7 +76,25 @@
   </li>
 </ul>
 
-<h3>What do we mean by <em>balance transparency and confidentiality?</em></h3>
+<h2>Additional Details…</h2>
+
+<h3>What do we mean by <em>culture of respect, charity and trust</em>?</h3>
+<ul>
+  <li>
+    Listen well; <em>seek first to understand, then to be understood</em>.
+  </li>
+  <li>
+    Assume the best; don’t question each other’s motives.
+  </li>
+  <li>
+    Have the courage to share honestly; don’t leave anything unsaid in the process.
+  </li>
+  <li>
+    When we mess up or hurt one another, we will confess, pursue reconciliation and forgiveness.
+  </li>
+</ul>
+
+<h3>What do we mean by <em>balance transparency and confidentiality</em>?</h3>
 <ul>
   <li>
     We will be <em>transparent whenever possible</em> regarding our process, decisions
@@ -95,3 +113,26 @@
   </li>
 </ul>
 
+
+<h3>What do we mean by <em>represent and uphold C&MA Beliefs</em>?</h3>
+
+<ul>
+  <li>
+    We affirm the
+    <a href="https://cmalliance.org/who-we-are/what-we-believe/statement-of-faith/">Alliance Statement of Faith</a>
+    (noting the changes that are in the process of approval).
+  </li>
+  <li>
+    We are aligned broadly with the Alliance mission and perspectives.
+  </li>
+  <li>
+    We may have individual differences with specific
+    <a href="https://cmalliance.org/who-we-are/what-we-believe/perspectives/">Alliance Perspectives</a>
+    – we are not seeking uniformity on all these matters; rather, we are committed to constructive
+    dialog where we have differences, to working within the existing Alliance processes and
+    leadership structures.
+  </li>
+  <li>
+    We expect the same from nominees for elected positions.
+  </li>
+</ul>
