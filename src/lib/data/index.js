@@ -18,3 +18,4 @@ export { default as denise_kerns } from './denise_kerns';
 // Deacons
 export { default as anne_sullivan } from './anne_sullivan';
 export { default as laurel_lebo } from './laurel_lebo';
+export { default as loydeen_reichman } from './loydeen_reichman';

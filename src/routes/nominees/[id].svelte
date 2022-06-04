@@ -34,8 +34,10 @@
 <h3>How do you hope to serve in this season?</h3>
 <p>{@html bio.questions[2]}</p>
 
-<h3>What else would you like your Wellspring family to know about you?</h3>
-<p>{@html bio.questions[3]}</p>
+{#if bio.questions[3]}
+  <h3>What else would you like your Wellspring family to know about you?</h3>
+  <p>{@html bio.questions[3]}</p>
+{/if}
 
 <style>
   h3 {
