@@ -1,5 +1,7 @@
 <script>
+  import NomineeList from './_NomineeList.svelte';
   import * as importedBios from '$lib/data';
+
   const bios = Object.values(importedBios);
 </script>
 
@@ -9,32 +11,11 @@
   Click on a nominee below to view their bio.
 </p>
 
-<div class="nominee-list">
-  {#each bios as bio (bio.name)}
-    <a href="/nominees/{bio.path}">
-      <img src="/photos/{bio.path}.jpg" alt={bio.name} />
-      {bio.name}
-    </a>
-  {/each}
-</div>
+<h2>Elder Nominees</h2>
+<NomineeList bios={bios.filter((bio) => bio.role === 'Elder')} />
 
-<style>
-  .nominee-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
+<h2>Member at Large Nominees</h2>
+<NomineeList bios={bios.filter((bio) => bio.role === 'Member at Large')} />
 
-  a {
-    display: block;
-    width: 150px;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-  }
-
-  a img {
-    width: 100%;
-    border-radius: 50%;
-  }
-</style>
+<h2>Deacon Nominees</h2>
+<NomineeList bios={bios.filter((bio) => bio.role === 'Deacon')} />
