@@ -1,8 +1,6 @@
 <script>
+  import bios from '$lib/data';
   import NomineeList from './_NomineeList.svelte';
-  import * as importedBios from '$lib/data';
-
-  const bios = Object.values(importedBios).sort((a, b) => a.name > b.name ? 1 : -1);
 
   const elders = bios.filter((bio) => bio.role === 'Elder');
 
@@ -33,3 +31,5 @@
 
 <h2>Deacon Nominees</h2>
 <NomineeList bios={deacons} />
+
+<br /><br /><br />

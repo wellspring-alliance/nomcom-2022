@@ -1,24 +1,32 @@
 // Elders
-export { default as michael_lee } from './michael_lee';
-export { default as joe_schlie } from './joe_schlie';
-export { default as mark_yarhouse } from './mark_yarhouse';
+import michael_lee from './michael_lee';
+import joe_schlie from './joe_schlie';
+import mark_yarhouse from './mark_yarhouse';
 
 // Members at Large
-export { default as philip_han } from './philip_han';
-export { default as jane_larson } from './jane_larson';
-export { default as eunju_yoon } from './eunju_yoon';
+import philip_han from './philip_han';
+import jane_larson from './jane_larson';
+import eunju_yoon from './eunju_yoon';
 
 // Other GB Nominees
-export { default as noah_kim } from './noah_kim';
-export { default as tina_kunz } from './tina_kunz';
+import noah_kim from './noah_kim';
+import tina_kunz from './tina_kunz';
 
 // Deacon Chair
-export { default as denise_kerns } from './denise_kerns';
+import denise_kerns from './denise_kerns';
 
 // Deacons
-export { default as anne_sullivan } from './anne_sullivan';
-export { default as laurel_lebo } from './laurel_lebo';
-export { default as loydeen_reichman } from './loydeen_reichman';
-export { default as emily_moreau } from './emily_moreau';
-export { default as lori_yarhouse } from './lori_yarhouse';
-export { default as harvard_townsend } from './harvard_townsend';
+import laurel_lebo from './laurel_lebo';
+import emily_moreau from './emily_moreau';
+import loydeen_reichman from './loydeen_reichman';
+import anne_sullivan from './anne_sullivan';
+import harvard_townsend from './harvard_townsend';
+import lori_yarhouse from './lori_yarhouse';
+
+export default [
+  michael_lee, joe_schlie, mark_yarhouse,
+  philip_han, jane_larson, eunju_yoon,
+  noah_kim, tina_kunz,
+  denise_kerns,
+  laurel_lebo, emily_moreau, loydeen_reichman, anne_sullivan, harvard_townsend, lori_yarhouse
+];
