@@ -21,12 +21,39 @@
 </p>
 
 <h2>Elder Nominees</h2>
+<p class="alongside">
+  If elected, the nominees below would serve alongside <b>Pastor Mitch</b> and our other
+  current elders whose term continues through June 2023: <b>Kevin Hector</b>, <b>John Jackson</b>,
+  <b>Brian Maruyama</b>, <b>Brian Stoffer</b>.
+</p>
 <NomineeList bios={elders} />
 
 <h2>Governing Board Nominees</h2>
+<p class="alongside">
+  If elected, the nominees below would serve alongside our other current Governing Board members
+  whose term continues through June 2023: <b>Linda Oury</b> (Member at Large), <b>Esther Kang</b>
+  (Secretary).
+</p>
 <NomineeList bios={govBoard} />
 
 <h2>Deacon Nominees</h2>
+<p class="alongside">
+  If elected, the nominees below would serve alongside our other current Deacon Board members
+  whose term continues through June 2023: <b>Keren Lee</b>, <b>Roberta Lee</b>,
+  <b>Jennifer McClure</b>, <b>Greg Schrad</b>, <b>Kathy Williams</b>, <b>Jerry Woehr</b>.
+</p>
 <NomineeList bios={deacons} />
 
 <br /><br /><br />
+
+<style>
+  h2 {
+    margin-bottom: 0.25em;
+  }
+
+  .alongside {
+    margin: 0 0 1.5em 0;
+    font-size: 0.875rem;
+    color: #222;
+  }
+</style>
