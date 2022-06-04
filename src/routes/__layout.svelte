@@ -14,7 +14,7 @@
     <nav>
       <a href="/" class:current={current === '/'}>Home</a>
       <a href="/vision" class:current={current === '/vision'}>Vision</a>
-      <a href="/nominations" class:current={current === '/nominations'}>Nominations</a>
+      <a href="/nominees" class:current={current === '/nominees'}>Nominees</a>
       <a href="/faq" class:current={current === '/faq'}>FAQ</a>
     </nav>
   </header>
