@@ -2,7 +2,7 @@
   import NomineeList from './_NomineeList.svelte';
   import * as importedBios from '$lib/data';
 
-  const bios = Object.values(importedBios);
+  const bios = Object.values(importedBios).sort((a, b) => a.name > b.name ? 1 : -1);
 </script>
 
 <h1>Nominees</h1>
