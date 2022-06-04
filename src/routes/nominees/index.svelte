@@ -7,7 +7,7 @@
   const elders = bios.filter((bio) => bio.role === 'Elder');
 
   const govBoard = bios.filter((bio) => {
-    return ['Member at Large'].includes(bio.role);
+    return ['Member at Large', 'Treasurer', 'Financial Secretary'].includes(bio.role);
   });
 
   const deacons = bios.filter((bio) => bio.role === 'Deacon');

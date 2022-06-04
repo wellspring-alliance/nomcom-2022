@@ -8,5 +8,8 @@ export { default as philip_han } from './philip_han';
 export { default as jane_larson } from './jane_larson';
 export { default as eunju_yoon } from './eunju_yoon';
 
+// Other GB Nominees
+export { default as tina_kunz } from './tina_kunz';
+
 // Deacons
 export { default as anne_sullivan } from './anne_sullivan';
