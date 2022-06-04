@@ -3,10 +3,10 @@
   const bios = Object.values(importedBios);
 </script>
 
-<h1>Nominations</h1>
+<h1>Nominees</h1>
 
 <p>
-  This page will contain all of the nominees. Clicking on one will take you to a nominee bio.
+  Click on a nominee below to view their bio.
 </p>
 
 <div class="nominee-list">
