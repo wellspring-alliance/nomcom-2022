@@ -22,16 +22,16 @@
 <h2>{bio.name}</h2>
 
 <h3>How long have you attended Wellspring?</h3>
-<p>{bio.questions[0]}</p>
+<p>{@html bio.questions[0]}</p>
 
 <h3>What are your spiritual gifts and how have you served in churches in the past?</h3>
-<p>{bio.questions[1]}</p>
+<p>{@html bio.questions[1]}</p>
 
 <h3>How do you hope to serve in this season?</h3>
-<p>{bio.questions[2]}</p>
+<p>{@html bio.questions[2]}</p>
 
 <h3>What else would you like your Wellspring family to know about you?</h3>
-<p>{bio.questions[3]}</p>
+<p>{@html bio.questions[3]}</p>
 
 <style>
   h3 {
