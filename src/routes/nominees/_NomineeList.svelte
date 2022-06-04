@@ -6,7 +6,8 @@
   {#each bios as bio (bio.name)}
     <a href="/nominees/{bio.path}">
       <img src="/photos/{bio.path}.jpg" alt={bio.name} />
-      {bio.name}
+      <div class="name">{bio.name}</div>
+      <div class="role">{bio.role}</div>
     </a>
   {/each}
 </div>
@@ -15,7 +16,7 @@
   .nominee-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 3em;
   }
 
   a {
@@ -30,4 +31,14 @@
     width: 100%;
     border-radius: 50%;
   }
+
+  .name {
+    color: #222;
+    font-weight: bold;
+  }
+
+  .role {
+    color: #555;
+  }
+
 </style>

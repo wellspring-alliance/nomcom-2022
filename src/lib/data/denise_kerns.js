@@ -2,7 +2,7 @@ export default {
 
 name: 'Denise Kerns',
 path: 'denise_kerns',
-role: 'Deacon / Deacon Chair',
+role: 'Deacon Chair',
 
 questions: [
 
