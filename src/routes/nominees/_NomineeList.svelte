@@ -28,8 +28,10 @@
   }
 
   a img {
-    width: 100%;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    border-radius: 75px;
   }
 
   .name {
