@@ -15,7 +15,9 @@
 <h1>Nominees</h1>
 
 <p>
-  Click on a nominee below to view their bio.
+  Click on a nominee below to view their bio. We also welcome you to read the
+  <a href="/vision">vision, context and commitments</a> that have guided us in our work,
+  as well as the <a href="faq">FAQ</a> that answers some questions we received or anticipated.
 </p>
 
 <h2>Elder Nominees</h2>
