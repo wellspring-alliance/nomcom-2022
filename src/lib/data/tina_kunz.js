@@ -13,7 +13,7 @@ from Chicago to Lombard`,
 
 //  What are your spiritual gifts and how have you served in churches in the past?
 `I have the spiritual gifts of Administration and Faith. At our church in Chicago
-I taught in Children's ministry. Here are Wellpsring (/Blanchard) I have co-led
+I taught in Children's Ministry. Here at Wellpsring (/Blanchard) I have co-led
 Women INC groups, co-led a small group, and co-led a class on redeeming and
 stewarding our ethnic identities (Beyond Colorblind).`,
 
@@ -26,7 +26,7 @@ encouragement to our leaders.`,
 
 //  What else would you like your Wellspring family to know about you?
 `I am married to Ken Kunz and we have 2 children, Jana (20) and Tommy (17). From
-2012 -2018 I worked as the part-time accountant here at Wellspring before moving
+2012-2018 I worked as the part-time accountant here at Wellspring before moving
 back into corporate accounting. In my free time, I enjoy getting outside to hike
 or bike, visiting coffee shops and exploring neighborhoods in Chicago with
 friends and family, and hanging out with our toddler nieces.`
