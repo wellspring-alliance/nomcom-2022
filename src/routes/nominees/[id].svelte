@@ -20,6 +20,7 @@
 
 <img src="/photos/{bio.path}.jpg" alt={bio.name} />
 <h2>{bio.name}</h2>
+<div><b>Nominated for:</b> {bio.role}</div>
 
 <h3>How long have you attended Wellspring?</h3>
 <p>{@html bio.questions[0]}</p>
