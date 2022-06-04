@@ -9,6 +9,7 @@ export { default as jane_larson } from './jane_larson';
 export { default as eunju_yoon } from './eunju_yoon';
 
 // Other GB Nominees
+export { default as noah_kim } from './noah_kim';
 export { default as tina_kunz } from './tina_kunz';
 
 // Deacons

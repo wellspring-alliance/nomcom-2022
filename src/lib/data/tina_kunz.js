@@ -3,6 +3,7 @@ export default {
 name: 'Tina Kunz',
 path: 'tina_kunz',
 role: 'Financial Secretary',
+one_year: true,
 
 questions: [
 
