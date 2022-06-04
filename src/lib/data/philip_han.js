@@ -1,8 +1,8 @@
 export default {
 
 name: 'Philip Han',
+path: 'philip_han',
 role: 'Member at Large',
-photo: 'philip_han.jpg',
 
 questions: [
 

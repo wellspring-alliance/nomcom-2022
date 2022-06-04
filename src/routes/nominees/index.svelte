@@ -9,30 +9,30 @@
   This page will contain all of the nominees. Clicking on one will take you to a nominee bio.
 </p>
 
-<ul>
+<div class="nominee-list">
   {#each bios as bio (bio.name)}
-    <li>
-      <img src="/photos/{bio.photo}" alt={bio.name} />
+    <a href="/nominees/{bio.path}">
+      <img src="/photos/{bio.path}.jpg" alt={bio.name} />
       {bio.name}
-    </li>
+    </a>
   {/each}
-</ul>
+</div>
 
 <style>
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  .nominee-list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  li {
+  a {
+    display: block;
     width: 150px;
     text-align: center;
+    color: black;
+    text-decoration: none;
   }
 
-  li img {
+  a img {
     width: 100%;
     border-radius: 50%;
   }
