@@ -52,6 +52,7 @@
 
 <p>
   Thank you,<br/><br/>
-  Wellspring Nominating Committee<br>
-  Felicia Bullock, Grace Chan, James Cuénod, Philip Han, Young Ok Kim, Ken Kunz
+  Wellspring Nominating Committee<br/>
+  Felicia Bullock, Grace Chan, James Cuénod, Philip Han, Young Ok Kim, Ken Kunz (chair)<br />
+  Pastor Mitch Kim (ex officio)
 </p>

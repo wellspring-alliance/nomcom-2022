@@ -76,12 +76,10 @@ Pastor Mitch Kim (ex officio)
   Previous Updates
 </h2>
 
-<!-- 
 <p>
-  <a href="update-20220529">May 29, 2022</a>
+  <a href="/updates/20220529">May 29, 2022</a>
 </p>
--->
 
  <p>
-  <a href="update-20220501">May 1, 2022</a>
+  <a href="/updates/20220501">May 1, 2022</a>
 </p>
