@@ -12,5 +12,8 @@ export { default as eunju_yoon } from './eunju_yoon';
 export { default as noah_kim } from './noah_kim';
 export { default as tina_kunz } from './tina_kunz';
 
+// Deacon Chair
+export { default as denise_kerns } from './denise_kerns';
+
 // Deacons
 export { default as anne_sullivan } from './anne_sullivan';

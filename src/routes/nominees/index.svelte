@@ -10,7 +10,9 @@
     return ['Member at Large', 'Treasurer', 'Financial Secretary'].includes(bio.role);
   });
 
-  const deacons = bios.filter((bio) => bio.role === 'Deacon');
+  const deacon_chair = bios.filter((bio) => /Deacon Chair/.test(bio.role));
+
+  const deacons = bios.filter((bio) => /Deacon/.test(bio.role));
 
 </script>
 
@@ -25,6 +27,9 @@
 
 <h2>Governing Board Nominees</h2>
 <NomineeList bios={govBoard} />
+
+<h2>Deacon Chair Nominee</h2>
+<NomineeList bios={deacon_chair} />
 
 <h2>Deacon Nominees</h2>
 <NomineeList bios={deacons} />
