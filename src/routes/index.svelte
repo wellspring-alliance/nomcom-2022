@@ -57,7 +57,9 @@ want to invite nominations for next year’s Nominating Committee. If you know
 someone who is spiritually mature, enjoys talking to people, and cares deeply
 about God’s work at Wellspring, please consider nominating them. For all floor
 nominations, please confirm the nominee is willing to serve in the role, and
-email their name and the role to nomcom@wellspringalliance.net by June 10th.
+email their name and the role to
+<a href="mailto:nomcom@wellspringalliance.net">nomcom@wellspringalliance.net</a>
+by June 10th.
 </p>
 
 <p>
