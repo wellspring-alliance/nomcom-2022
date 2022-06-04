@@ -1,8 +1,8 @@
 <script context="module">
-  import * as bios from '$lib/data';
+  import bios from '$lib/data';
 
   export async function load({ params }) {
-    const bio = bios[params.id];
+    const bio = bios.find((b) => b.path === params.id);
     if (bio) return { props: { bio } };
 
     return {
