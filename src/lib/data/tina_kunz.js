@@ -13,7 +13,7 @@ from Chicago to Lombard`,
 
 //  What are your spiritual gifts and how have you served in churches in the past?
 `I have the spiritual gifts of Administration and Faith. At our church in Chicago
-I taught in Children's Ministry. Here at Wellpsring (/Blanchard) I have co-led
+I taught in Children's Ministry. Here at Wellspring (/Blanchard) I have co-led
 Women INC groups, co-led a small group, and co-led a class on redeeming and
 stewarding our ethnic identities (Beyond Colorblind).`,
 

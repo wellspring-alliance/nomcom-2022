@@ -20,14 +20,12 @@ home. At Wellspring, I served on the Welcome committee and have been a communion
 server. Mark and I have also been involved attending and leading home groups.`,
 
 // How do you hope to serve in this season?
-`How do you hope to serve in this season? I hope I can help meet people's needs
-in this season and let them know that God's loves them and cares about their
-struggles.`,
+`I hope I can help meet people's needs in this season and let them know that God's
+loves them and cares about their struggles.`,
 
 //  What else would you like your Wellspring family to know about you?
-`What else would you like your Wellspring family to know about you? I work part
-time at Graham"s Chocolate shop in downtown Wheaton and experience great joy in
-sharing my love of chocolate with others.`
+`I work part time at Graham"s Chocolate shop in downtown Wheaton and experience
+great joy in sharing my love of chocolate with others.`
 
 ]
 
