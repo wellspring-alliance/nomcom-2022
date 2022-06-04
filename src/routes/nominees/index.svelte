@@ -22,6 +22,7 @@
   .nominee-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
   }
 
   a {
