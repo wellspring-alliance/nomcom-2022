@@ -14,6 +14,8 @@
 
 <script>
   export let bio;
+
+  $: term = bio.one_year ? '1 year' : '2 years';
 </script>
 
 <a href="/nominees">« back to Nominees</a>
@@ -21,6 +23,7 @@
 <img src="/photos/{bio.path}.jpg" alt={bio.name} />
 <h2>{bio.name}</h2>
 <div><b>Nominated for:</b> {bio.role}</div>
+<div><b>Term length:</b> {term}</div>
 
 <h3>How long have you attended Wellspring?</h3>
 <p>{@html bio.questions[0]}</p>

@@ -3,6 +3,7 @@ export default {
 name: 'Eunju Yoon',
 path: 'eunju_yoon',
 role: 'Member at Large',
+one_year: true,
 
 questions: [
 
