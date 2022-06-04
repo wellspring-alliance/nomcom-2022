@@ -20,3 +20,4 @@ export { default as anne_sullivan } from './anne_sullivan';
 export { default as laurel_lebo } from './laurel_lebo';
 export { default as loydeen_reichman } from './loydeen_reichman';
 export { default as emily_moreau } from './emily_moreau';
+export { default as lori_yarhouse } from './lori_yarhouse';
