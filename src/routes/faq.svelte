@@ -97,7 +97,7 @@
 <p>
   In balancing confidentiality and transparency, we are unable to answer specifics
   as to why any particular candidate was not nominated. We as a committee sought
-  unity - not uniformity - so we reached decisions only after much discussion and
+  unity – not uniformity – so we reached decisions only after much discussion and
   often much disagreement. In the reality of disagreement and differing views, we
   also committed to listening to each other and accepting the group’s collective
   wisdom in decisions. We recognize that we as a church body are in a season of
